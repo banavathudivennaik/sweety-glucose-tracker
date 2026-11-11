@@ -146,6 +146,14 @@ node seed.js
 
 Developed as a Full Stack Developer assignment.
 
+
+## Project Demo Video
+
+Watch the complete application demonstration:
+
+[Click here to watch Sweety – Blood Glucose Tracker](https://drive.google.com/file/d/1-oWC-aOJ7kye-STol0c2n8LAcYOA_95W/view?usp=sharing)
+
+
 ## Notes
 
 ### Assumptions
