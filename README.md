@@ -145,3 +145,27 @@ node seed.js
 ## Author
 
 Developed as a Full Stack Developer assignment.
+
+## Notes
+
+### Assumptions
+
+- Glucose readings are recorded in mg/dL.
+- Each user can record a maximum of four readings per day, one for each time slot.
+- A glucose reading must be an integer between 40 and 600 mg/dL.
+- Future dates are not allowed for glucose entries.
+- Each user's readings are private and accessible only after authentication.
+- The demo account and sample readings are provided for testing purposes.
+
+### Future Improvements
+
+With more development time, I would improve the application by adding:
+
+- Interactive glucose trend charts using Recharts.
+- Pagination and advanced filtering for reading history.
+- Password reset and email verification.
+- Docker support for easier deployment.
+- Automated unit and integration tests.
+- Improved mobile responsiveness and accessibility.
+- Doctor access to view patient reports with user permission.
+- Cloud deployment and production monitoring.
