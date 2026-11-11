@@ -1,0 +1,166 @@
+
+/* Sweety - Authentication Page */
+
+* {
+    box-sizing: border-box;
+}
+
+.auth-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #e0f7f3, #dcecf5, #f0fdf4);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 42px 38px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(15, 80, 75, 0.13);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.auth-card h1 {
+    margin: 0;
+    color: #078477;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.auth-card .subtitle {
+    margin: 5px 0 30px;
+    color: #718096;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.auth-card h2 {
+    margin: 0 0 10px;
+    color: #1e293b;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.auth-card .description {
+    margin: 0 0 25px;
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-card input {
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border: 1px solid #dce5e7;
+    border-radius: 10px;
+    outline: none;
+    background: #f8fbfb;
+    color: #263238;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.auth-card input::placeholder {
+    color: #94a3b8;
+}
+
+.auth-card input:focus {
+    border-color: #079889;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(7, 152, 137, 0.12);
+}
+
+.auth-card form > button {
+    width: 100%;
+    height: 52px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #079889, #087b70);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.auth-card form > button:hover {
+    background: linear-gradient(135deg, #087b70, #05645b);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(7, 123, 112, 0.22);
+}
+
+.auth-card form > button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.auth-card .toggle-text {
+    margin: 25px 0 0;
+    color: #718096;
+    font-size: 14px;
+}
+
+.auth-card .toggle-button {
+    margin-left: 6px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #078477;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.auth-card .toggle-button:hover {
+    color: #045f56;
+    text-decoration: underline;
+}
+
+.auth-card .error-message {
+    margin: 0 0 18px;
+    padding: 11px 13px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 18px;
+    }
+
+    .auth-card {
+        padding: 32px 22px;
+        border-radius: 16px;
+    }
+
+    .auth-card h1 {
+        font-size: 33px;
+    }
+
+    .auth-card h2 {
+        font-size: 22px;
+    }
+}

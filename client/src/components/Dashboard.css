@@ -1,0 +1,400 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #253247;
+}
+
+.dashboard {
+    min-height: 100vh;
+    background: #f4f7fb;
+}
+
+.chart-filters button.active {
+    background: #078477;
+    color: white;
+    border-color: #078477;
+}
+/* HEADER */
+
+.dashboard-header {
+    background: linear-gradient(120deg, #087f70, #13a88a);
+    color: white;
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.dashboard-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.dashboard-header button {
+    background: white;
+    color: #087f70;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* MAIN CONTENT */
+
+.dashboard-content {
+    width: 90%;
+    max-width: 1350px;
+    margin: 35px auto;
+}
+
+.dashboard-content > h2 {
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.dashboard-content > p {
+    color: #718096;
+    margin-top: 5px;
+}
+
+/* SECTIONS */
+
+.reading-section {
+    background: #ffffff;
+    padding: 27px;
+    margin-top: 25px;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px rgba(30, 50, 80, 0.06);
+    border: 1px solid #e9eef5;
+}
+
+.reading-section h2 {
+    font-size: 21px;
+    color: #26384d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.reading-section > p {
+    color: #718096;
+}
+
+/* FORM */
+
+.reading-section form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: end;
+}
+
+.reading-section form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.reading-section label,
+.reading-section form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #40536b;
+}
+
+.reading-section input,
+.reading-section select {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #d8e0ea;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #253247;
+    outline: none;
+    transition: 0.2s;
+}
+
+.reading-section input:focus,
+.reading-section select:focus {
+    border-color: #0d9b83;
+    box-shadow: 0 0 0 3px rgba(13, 155, 131, 0.12);
+}
+
+/* BUTTONS */
+
+.dashboard button {
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-family: inherit;
+}
+
+.reading-section form button,
+.chart-filters button {
+    min-height: 43px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #0b927b;
+    color: white;
+    font-weight: 600;
+}
+
+.reading-section form button:hover,
+.chart-filters button:hover {
+    background: #087361;
+    transform: translateY(-1px);
+}
+
+.reading-section form button[type="button"] {
+    background: #64748b;
+}
+
+.reading-section form button[type="button"]:hover {
+    background: #475569;
+}
+
+.dashboard button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* REPORT FILTERS */
+
+.chart-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.chart-filters button {
+    background: #e7f5f1;
+    color: #087f70;
+    border: 1px solid #ccebe2;
+}
+
+.chart-filters button:hover {
+    background: #0b927b;
+    color: white;
+}
+
+/* DATE RANGE */
+
+.date-range-filter {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 18px 0;
+}
+
+.date-range-filter > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 200px;
+}
+
+/* STATISTICS CARDS */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 24px;
+    border-radius: 13px;
+    border-left: 5px solid #0b927b;
+    box-shadow: 0 3px 15px rgba(30, 50, 80, 0.06);
+}
+
+.dashboard-card h3 {
+    margin: 0;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard-card p {
+    margin: 15px 0 5px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #087f70;
+}
+
+.dashboard-card small {
+    color: #8795a8;
+}
+
+/* CHART */
+
+.reading-section .recharts-responsive-container {
+    margin-top: 20px;
+}
+
+/* READING TABLE */
+
+.reading-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.reading-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.reading-table th {
+    background: #eaf5f2;
+    color: #087f70;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reading-table td {
+    padding: 15px;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 14px;
+}
+
+.reading-table tbody tr:hover {
+    background: #f7fbfa;
+}
+
+/* TABLE ACTION BUTTONS */
+
+.reading-table td button {
+    padding: 8px 15px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white;
+}
+
+.reading-table td button:first-child {
+    background: #2878c8;
+}
+
+.reading-table td button:first-child:hover {
+    background: #175da2;
+}
+
+.reading-table td button:last-child {
+    background: #dc5050;
+}
+
+.reading-table td button:last-child:hover {
+    background: #bb3030;
+}
+
+/* MESSAGES */
+
+.error-message {
+    color: #c62828;
+    background: #fff0f0;
+    border: 1px solid #ffd0d0;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.success-message {
+    color: #087f50;
+    background: #e9f9f0;
+    border: 1px solid #c6eed7;
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+/* REFRESH BUTTON */
+
+.reading-section > button {
+    background: #2878c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.reading-section > button:hover {
+    background: #175da2;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reading-section form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-header {
+        padding: 18px 5%;
+    }
+
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-content {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .reading-section {
+        padding: 18px;
+    }
+
+    .reading-section form {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .date-range-filter {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .chart-filters {
+        flex-direction: column;
+    }
+
+    .chart-filters button {
+        width: 100%;
+    }
+}
