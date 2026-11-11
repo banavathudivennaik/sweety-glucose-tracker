@@ -19,6 +19,35 @@ A full-stack web application to record, manage, and monitor daily blood glucose 
 - Highest, lowest, and average glucose statistics
 - User-specific reading management
 
+## Application Screenshots
+
+### 1. User Signup
+![Signup](screenshots/signup.png)
+
+### 2. User Login
+![Login](screenshots/Login.png)
+
+### 3. Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### 4. Add Glucose Reading
+![Add Reading](screenshots/add_reading.png)
+
+### 5. Daily Report
+![Daily Report](screenshots/daily_report.png)
+
+### 6. Month-to-Date Report
+![Month-to-Date](screenshots/month_to_date.png)
+
+### 7. Previous Month Report
+![Previous Month](screenshots/previous_month.png)
+
+### 8. Glucose History Chart
+![Glucose History Chart](screenshots/glucose_history_chart.png)
+
+### 9. Glucose Readings History
+![Glucose Readings](screenshots/glucose_readings.png)
+
 ## Technology Stack
 
 **Frontend**
